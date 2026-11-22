@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1eb">
+  <meta name="description" content="MyDay - organizza le tue giornate">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>MyDay</title>
+</head>
+<body>
+  <header class="top">
+    <div><p class="eyebrow" id="today"></p><h1>MyDay</h1><p class="muted">Organizza la tua giornata, con calma.</p></div>
+    <button id="themeBtn" class="icon-btn" aria-label="Cambia tema">☾</button>
+  </header>
+  <main>
+    <section class="summary">
+      <div><p class="eyebrow">IL TUO GIORNO</p><h2 id="progressText">0 attività completate</h2><div class="track"><span id="progressBar"></span></div></div>
+      <div class="summary-icon">✦</div>
+    </section>
+    <nav class="tabs" aria-label="Sezioni">
+      <button class="tab active" data-view="home">Oggi</button>
+      <button class="tab" data-view="tasks">Attività</button>
+      <button class="tab" data-view="routine">Routine</button>
+      <button class="tab" data-view="notes">Note</button>
+      <button class="tab" data-view="money">Spese</button>
+      <button class="tab" data-view="goals">Obiettivi</button>
+      <button class="tab" data-view="stats">Statistiche</button>
+    </nav>
+    <section id="view"></section>
+  </main>
+  <footer>MyDay · I tuoi dati restano su questo dispositivo in questa versione.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
